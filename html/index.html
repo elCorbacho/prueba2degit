@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+    <title>Tecnologia medica e informatica</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Primer heading</h1> 
+    <h2>Segundo titulo</h2>
+    <h3>Tercer heading</h3>
+    <h4>Cuarto Heading</h4>
+    <h5>Quinto Heading</h5>
+    <h6>Sexto heading</h6>
+    <p>Soy Andres Corbacho Tecnologo Medico.<p>
+    <p>Estudie 5 años en al Universidad de valparaiso</p>
+    <hr>     <!-- hr es una linea Separadora-->
+    <h2>Detalle de estudios</h2>
+    <p>Tecnologo medico de la universidad de valparaiso
+        <br>Estudie en la <span> de san felipe </span> donde hace mucho calor
+        Hice mi practica en el <span style="color:blue"> Luis Calvo Mackenna</span> <!-- la etiqueta span es para seleccionar texto espefico-->
+        <br>este es un hospital de niños publico de amplia experiencia en patologias complejas  <!-- la funcion <br> me agrega saltos de linea -->
+        <br><br> 
+        Salto de linea hecho con la funcion de < br > 
+    </p>
+    <br>     <!-- br es un salto de linea -->
+    <h2>Ejemplo del a robotica e informatizacion en la carrera</h2>
+    
+    <!-- Ejemplos de vinculos en nuestra pagina webs -->
+    <a href="https://www.youtube.com/watch?v=LQbTx3mcDYY"> Ir a video de maquina cortadora automatica (reemplaza pagina)</a>
+    <br><br>
+    <a target="_blank" href="https://www.youtube.com/watch?v=LQbTx3mcDYY"> Ir a video de maquina cortadora automatica (nueva pestaña) </a>
+    <br><br>
+    <h2>Ejemplo de Imagenes</h2>
+    <!-- Incrustar imagenes -->
+    <p>Ejemplo de imagen de una maquina automatica directa del sitio web</p>
+    <img src="http://axlab.dk/wp-content/uploads/2020/06/revolution2.jpg" height="200"/>
+    
+    <br><br>
+    <p>Ejemplo de imagen de una maquina automatica cargada del Disco duro</p>
+    <img src="img/imagen1.png" />
+    
+    <br><br>
+    <hr>
+
+    <!--METODO DE POST no es seguro por si solo-->
+    <h2>Formularios por metodo POST</h2> <!--ENCABEZADO TIPO 2-->
+    <form action="/formulario" method="POST"> <!--ETIQUETA DE FORMULARIO FORM-->
+        <label for="nombre">Nombre</label> <!--ETIQUETA PARA INDICAR EL DATO QUE ESTAMOS SOLICITANDO-->
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre"/> 
+            <!---Campo input hace referencia al label--> 
+            <!---name es la "llave" y da el titulo al objeto-->
+            <!---Type da forma al campo ej input / text / radio  etc -->
+        <br><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido"/>
+        <br><br>
+        <label for="comentario">Comentario</label><br>
+
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">comentario por defecto </textarea>
+        <br>
+        <label for="boton">boton</label> <!--ETIQUETA PARA INDICAR EL DATO QUE ESTAMOS SOLICITANDO-->
+        <input type="radio" id="boton" name="nombre" placeholder="Escriba su nombre"/> 
+        <br><br>
+        <label for="file">archivo</label> <!--ETIQUETA PARA INDICAR SUBIDA DE ARCHIVO-->
+        <input type="file" id="file" name="file" placeholder="Escriba su nombre"/> 
+        <br><br>
+        <input type="submit" />
+
+    </form>
+
+
+<!--METODO DE ENVIO DE FORMULARIO GET-->
+    <br><br>
+    <h2>Formularios por metodo GET</h2> <!--ENCABEZADO TIPO 2-->
+    <form action="/formulario" method="GET"> <!--ETIQUETA DE FORMULARIO FORM-->
+        <label for="nombre">Nombre</label> <!--ETIQUETA PARA INDICAR EL DATO QUE ESTAMOS SOLICITANDO-->
+        <input value="nombre por defecto" type="text" id="nombre" name="nombre" placeholder="Escriba su nombre"/> 
+            <!---Campo input hace referencia al label--> 
+            <!---name es la "llave" y da el titulo al objeto-->
+            <!---Type da forma al campo ej input / text / radio  etc -->
+            <!---Value establece por defecto un valor al campo input-->
+        <br><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido"/>
+        <br><br>
+        <label for="comentario">Comentario</label><br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+        <br>
+        <label for="boton">boton</label> <!--ETIQUETA PARA INDICAR EL DATO QUE ESTAMOS SOLICITANDO-->
+        <input type="radio" id="boton" name="nombre" placeholder="Escriba su nombre"/> 
+        <br><br>
+        <label for="file">archivo</label> <!--ETIQUETA PARA INDICAR SUBIDA DE ARCHIVO-->
+        <input type="file" id="file" name="file" placeholder="Escriba su nombre"/> 
+        <br><br>
+        <input type="submit" />
+
+    </form>
+    <br><br>
+    <!---EJEMPLO DE USO DE BOTONES-->
+    <!--METODO DE ENVIO DE FORMULARIO GET-->
+
+    <h2>LISTA NO ORDENADA</h2>
+    <ul> <!-- LISTA NO ORDENADA-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <br><br>
+
+    <h2>LISTA ORDENADA</h2>
+    <ol> <!-- LISTA ORDENADA-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+
+    <h2>LISTA ORDENADA DESDE X NUMERO</h2>
+    <ol> <!-- LISTA ORDENADA-->
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+    <br>
+
+    <h2>LISTA ORDENADA CON ANIDADO</h2>
+    <ol> <!-- LISTA ORDENADA-->
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha";>sub elemento 1</li>
+                <li style="list-style-type: lower-alpha";>sub elemento 2</li>
+                <li style="list-style-type: lower-alpha";>sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+    <br><br>
+
+
+    <!--AGREGAR UNA TABLA-->
+    <h2>EJEMPLO DE TABLA POR HTML</h2>
+    <table style="width: 500px";>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Navaja histologica</td>
+                <td>250.000 x caja</td>
+            </tr>
+            <tr>
+                <td>Xilol</td>
+                <td>5000 x caja</td>
+            </tr>
+            <tr>
+                <td>Ultramicrotomo leica</td>
+                <td>45.000.000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td></td>
+            <td>total: 45.255.000</td>
+        </tfoot>
+
+
+
+    </table>
+
+    <br><br>
+    <h2>Formularios por metodo GET</h2> <!--ENCABEZADO TIPO 2-->
+    <form action="/formulario" method="GET"> <!--ETIQUETA DE FORMULARIO FORM-->
+        <label for="nombre">Nombre</label> <!--ETIQUETA PARA INDICAR EL DATO QUE ESTAMOS SOLICITANDO-->
+        <input value="nombre por defecto" type="text" id="nombre" name="nombre" placeholder="Escriba su nombre"/> 
+            <!---Campo input hace referencia al label--> 
+            <!---name es la "llave" y da el titulo al objeto-->
+            <!---Type da forma al campo ej input / text / radio  etc -->
+            <!---Value establece por defecto un valor al campo input-->
+        <br><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido"/>
+        <br><br>
+        <label for="comentario">Comentario</label><br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+        <br>
+        <label for="boton">boton</label> <!--ETIQUETA PARA INDICAR EL DATO QUE ESTAMOS SOLICITANDO-->
+        <input type="radio" id="boton" name="nombre" placeholder="Escriba su nombre"/> 
+        <br><br>
+        <label for="file">archivo</label> <!--ETIQUETA PARA INDICAR SUBIDA DE ARCHIVO-->
+        <input type="file" id="file" name="file" placeholder="Escriba su nombre"/> 
+        <br><br>
+        <button type="button">enviar</button>
+        <br>
+        <button type="reset">resetear</button>
+        <br>
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+
+    https://youtu.be/MJkdaVFHrto?t=3063  
+
+    <P><span>HOLA </span></P>
+        <P><span><em>hola</em> </span></P>
+        <P><span><strong>hola</strong> </span></P>
+        <P><span><mark>hola</mark> </span></P>
+        <P><span><sub>hola</sub> </span></P>
+        <P><span><sup>hola</sup> </span></P>
+        <P><span><del>hola</del> </span></P>
+
+
+    <div class=colores>
+        <h1 style="background-color:Tomato;">Tomato</h1>
+        <h1 style="background-color:Orange;">Orange</h1>
+        <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+        <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+        <h1 style="background-color:Gray;">Gray</h1>
+        <h1 style="background-color:SlateBlue;">SlateBlue</h1>
+        <h1 style="background-color:Violet;">Violet</h1>
+        <h1 style="background-color:LightGray;">LightGray</h1>
+    </div>
+
+
+
+
+</body>
+</html>
